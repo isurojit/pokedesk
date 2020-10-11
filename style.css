@@ -2,7 +2,7 @@
 body{
     text-transform: capitalize;
     font-family: 'Roboto Mono', monospace;
-    background-color:cyan;
+    background-color:black;
 }
 table{
     position: relative;
@@ -11,20 +11,50 @@ table{
 }
 td,th{
     border: 1px solid #000;
+    background-color: rgba(255, 255, 255, .6);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 800;
 }
 img{
     width: 15vw;
     height: 30vh;
 }
 h1{
-    text-align: center;
+    position: relative;
+    left: 45%;
+    background-color:rgba(255, 255, 255, .6);
+    width: 11%;
 }
 footer{
-    background-color: #000;
+    background-color: rgba(0, 0, 0, .5);
     height: 5vh;
     color: #fff;
+    position: relative;
+    bottom: -20px;
+    width: 100%;
 }
 h5{
     text-decoration: underline;
     text-align: center;
+}
+.fullscreen{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    overflow: hidden;
+}
+.fullscreen-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
